@@ -3,10 +3,39 @@ html
     title Example title
     meta charset='utf-8'
     link rel="stylesheet" href="/stylesheets/application.css"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"
+    /*script src="../js/jquery-1.6.2.min.js"*/
+    /*script src="../scripts/jquery.masonry.min.js"*/
+    script src="https://raw.github.com/desandro/masonry/master/js/jquery-1.6.2.min.js"
+    script src="https://raw.github.com/desandro/masonry/master/jquery.masonry.min.js"
+    script src="https://raw.github.com/desandro/masonry/master/js/jquery.infinitescroll.min.js"
+    script src="https://raw.github.com/desandro/masonry/master/js/box-maker.js"
+    script scr="https://raw.github.com/desandro/masonry/master/js/modernizr-transitions.js"
+
+
   body
-    #container
-      #content
-        h1 Hello!
-        h2=hello("codegram")
-        p
-          | Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and actions ever had in view the ultimate capture of Moby Dick; though he seemed ready to sacrifice all mortal interests to that one passion; nevertheless it may have been that he was by nature and long habituation far too wedded to a fiery whaleman's ways, altogether to abandon the collateral prosecution of the voyage. Or at least if this were otherwise, there were not wanting other motives much more influential with him. It would be refining too much, perhaps, even considering his monomania, to hint that his vindictiveness towards the White Whale might have possibly extended itself in some degree.
+    .box
+      | Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and actions ever had in view the ultimate capture of Moby Dick; though he seemed ready to sacrifice all mortal interests to that one passion; nevertheless it may have been that he was by nature and long habituation far too wedded to a fiery whaleman's ways,
+    .box
+      | Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and actions ever had in view the ultimate capture of Moby Dick; though he seemed ready to sacrifice all mortal interests to that one passion; nevertheless it may have been that he was by nature and long habituation far too wedded to a fiery whaleman's ways,
+    .box
+      | Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and actions ever had in view the ultimate capture of Moby Dick; though he seemed ready to sacrifice all mortal interests to that one passion; nevertheless it may have been that he was by nature and long habituation far too wedded to a fiery whaleman's ways,
+    .box
+      | Though, consumed with the hot fire of his purpose, Ahab in all his thoughts and actions ever had in view the ultimate capture of Moby Dick; though he seemed ready to sacrifice all mortal interests to that one passion; nevertheless it may have been that he was by nature and long habituation far too wedded to a fiery whaleman's ways,
+
+
+
+
+javascript:
+  $(function(){
+    var $container = $('#container');
+    $(window).resize(function(){
+      $container.masonry({
+          itemSelector: '.box',
+          isResizable: false,
+          // set columnWidth a fraction of the container width
+          columnWidth: $container.width() / 5
+      });
+    // trigger resize to set up masonry on start-up
+    }).resize();
+  });

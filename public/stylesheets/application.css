@@ -60,6 +60,7 @@ body {
   font-family: "Trebuchet MS";
   color: #555555;
   font-size: 75%;
+  position: absolute;
   padding: 10px;
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
@@ -354,12 +355,21 @@ body form.inline {
 body form.inline p {
   margin-bottom: 0;
 }
-
-#container {
+body #container {
+  position: relative;
+  height: 100px;
   width: 950px;
   margin: 0 auto;
   overflow: hidden;
   *zoom: 1;
+}
+body #container h1 {
+  color: black;
+}
+body .box_col2_masorny-brick {
+  position: absolute;
+  top: 81px;
+  left: 209px;
 }
 
 #content {
@@ -371,3 +381,237 @@ body form.inline p {
 * html #content {
   overflow-x: hidden;
 }
+
+/*** Base styles *** */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font: 13px "Helvetica Neue", Arial, sans-serif;
+  background: #d8d5d2;
+  color: #222222;
+  line-height: 1.6em;
+}
+
+a {
+  color: #aa22cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #dd2266;
+}
+a:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+h1, h2 {
+  font-weight: 100;
+  line-height: 1.2em;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+p, ul, ol, pre, dl {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/*** Content *** */
+#content {
+  padding: 10px 10px 10px 210px;
+}
+
+/* screens smaller than 640 */
+@media screen and (max-width: 640px) {
+  #site-nav {
+    width: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+    padding-top: 0px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  #content {
+    padding-left: 10px;
+  }
+}
+.copy h2 {
+  clear: both;
+}
+
+a img {
+  border: none;
+}
+
+pre, code {
+  font-family: Monaco, monospace;
+  font-size: 12px;
+  background: #111111;
+  color: #f5f5f5;
+}
+
+p code {
+  padding: 1px 3px;
+}
+
+pre {
+  padding: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+ul, ol {
+  padding-left: 1.3em;
+}
+
+.hidden {
+  display: none;
+}
+
+.copy {
+  width: 600px;
+  line-height: 1.55em;
+}
+
+blockquote {
+  margin: 0;
+  font: italic 18px Georgia, serif;
+}
+
+dt {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+dd {
+  margin-left: 1em;
+}
+dd + dt {
+  margin-top: 0.5em;
+}
+
+button {
+  -webkit-appearance: push-button;
+}
+
+/*** Demos *** */
+#container {
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  clear: both;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.box {
+  margin: 5px;
+  padding: 5px;
+  background: #d8d5d2;
+  font-size: 11px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.box h2 {
+  font-size: 14px;
+  font-weight: 200;
+}
+.box img {
+  display: block;
+  width: 100%;
+}
+
+#tumblelog img {
+  display: block;
+  width: 100%;
+}
+
+.rtl .box {
+  float: right;
+  text-align: right;
+  direction: rtl;
+}
+
+.col1 {
+  width: 80px;
+}
+
+.col2 {
+  width: 180px;
+}
+
+.col3 {
+  width: 280px;
+}
+
+.col4 {
+  width: 380px;
+}
+
+.col5 {
+  width: 480px;
+}
+
+.col1 img {
+  max-width: 80px;
+}
+
+.col2 img {
+  max-width: 180px;
+}
+
+.col3 img {
+  max-width: 280px;
+}
+
+.col4 img {
+  max-width: 380px;
+}
+
+.col5 img {
+  max-width: 480px;
+}
+
+/* Infinite Scroll loader */
