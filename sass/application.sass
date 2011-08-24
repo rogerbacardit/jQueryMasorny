@@ -31,6 +31,8 @@ body
 
 #content
   +column($blueprint-grid-columns)
+
+
 /**** Base styles ***
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video
@@ -84,55 +86,55 @@ p, ul, ol, pre, dl
 strong
   font-weight: bold
 
-// /**** #site-nav ***
-//
-// #site-nav
-//   position: absolute
-//   width: 180px
-//   padding: 0 10px
-//   h1
-//     font-weight: 600
-//     font-size: 18px
-//     margin-bottom: 0.8em
-//     padding-top: 10px
-//     a
-//       color: #D26
-//       &:hover
-//         color: #A2C
-//   h2
-//     font-size: 17px
-//     font-weight: normal
-//     margin-bottom: 0.3em
-//   ul
-//     list-style: none
-//     padding-left: 0
-//     font-size: 12px
-//   li
-//     -webkit-border-radius: 4px
-//     -moz-border-radius: 4px
-//     border-radius: 4px
-//     a
-//       display: block
-//       padding: 3px 5px
-//     &.current
-//       background: #C8C5C2
-//       a
-//         color: white
-//         &:hover
-//           color: #D26
-//     ul
-//       margin-bottom: 0
-//     li
-//       font-size: 11px
-//       line-height: 1.4em
-//       a
-//         padding-left: 15px
-//     &.selected li a
-//       padding: 3px
-//       background: none
-//       &:hover
-//         color: #D26
-//
+/**** #site-nav ***
+
+#site-nav
+  position: absolute
+  width: 180px
+  padding: 0 10px
+  h1
+    font-weight: 600
+    font-size: 18px
+    margin-bottom: 0.8em
+    padding-top: 10px
+    a
+      color: #D26
+      &:hover
+        color: #A2C
+  h2
+    font-size: 17px
+    font-weight: normal
+    margin-bottom: 0.3em
+  ul
+    list-style: none
+    padding-left: 0
+    font-size: 12px
+  li
+    -webkit-border-radius: 4px
+    -moz-border-radius: 4px
+    border-radius: 4px
+    a
+      display: block
+      padding: 3px 5px
+    &.current
+      background: #C8C5C2
+      a
+        color: white
+        &:hover
+          color: #D26
+    ul
+      margin-bottom: 0
+    li
+      font-size: 11px
+      line-height: 1.4em
+      a
+        padding-left: 15px
+    &.selected li a
+      padding: 3px
+      background: none
+      &:hover
+        color: #D26
+
 /**** Content ***
 
 #content
@@ -198,62 +200,63 @@ dd
 button
   -webkit-appearance: push-button
 
-// #site-footer
-//   clear: both
-//   margin: 20px 0px
-//   border-top: 2px solid white
-//   padding-top: 10px
-//   line-height: 30px
-//   font-size: 95%
-//   font-style: italic
-//
-// .license-copy
-//   font-size: 85%
-//
-// .demos #copy
-//   max-width: 640px
-//
-// .docs #content
-//   max-width: 640px
-//   h2
-//     border-top: 2px solid #FFF
-//     padding-top: 10px
-//     &:target
-//       background: #D26
-//       color: white
-//       padding: 10px 5px 5px
+#site-footer
+  clear: both
+  margin: 20px 0px
+  border-top: 2px solid white
+  padding-top: 10px
+  line-height: 30px
+  font-size: 95%
+  font-style: italic
 
-// /**** Docs ***
-//
-// .options dl
-//   dt
-//     font-weight: normal
-//     float: left
-//     padding: 0 1.2em
-//     background: #161616
-//     line-height: 32px
-//     height: 32px
-//     margin: 0
-//   dd
-//     float: left
-//     padding: 0 1.2em
-//     background: #161616
-//     line-height: 32px
-//     height: 32px
-//     margin: 0
-//   &.header
-//     dt, dd
-//       background: #444
-//   .option-type
-//     font-size: 13px
-//     color: #AAA
-//     font-style: italic
-//   dd
-//     margin-left: 1px
-//
+.license-copy
+  font-size: 85%
+
+.demos #copy
+  max-width: 640px
+
+.docs #content
+  max-width: 640px
+  h2
+    border-top: 2px solid #FFF
+    padding-top: 10px
+    &:target
+      background: #D26
+      color: white
+      padding: 10px 5px 5px
+
+/**** Docs ***
+
+.options dl
+  dt
+    font-weight: normal
+    float: left
+    padding: 0 1.2em
+    background: #161616
+    line-height: 32px
+    height: 32px
+    margin: 0
+  dd
+    float: left
+    padding: 0 1.2em
+    background: #161616
+    line-height: 32px
+    height: 32px
+    margin: 0
+  &.header
+    dt, dd
+      background: #444
+  .option-type
+    font-size: 13px
+    color: #AAA
+    font-style: italic
+  dd
+    margin-left: 1px
+
 /**** Demos ***
 
 #container
+  background: #FFF
   padding: 5px
   margin-bottom: 20px
   border-radius: 5px
@@ -321,181 +324,181 @@ button
 .col5 img
   max-width: 480px
 
-// /**** Gutters ***
-//
-// .has-gutters
-//   .box
-//     margin: 5px 0
-//   .col1
-//     width: 90px
-//   .col2
-//     width: 230px
-//   .col3
-//     width: 370px
-//   .col4
-//     width: 550px
+/**** Gutters ***
 
-// /**** Transitions ***
-//
-// .transitions-enabled
-//   &.masonry
-//     -webkit-transition-duration: 0.7s
-//     -moz-transition-duration: 0.7s
-//     -o-transition-duration: 0.7s
-//     transition-duration: 0.7s
-//     .masonry-brick
-//       -webkit-transition-duration: 0.7s
-//       -moz-transition-duration: 0.7s
-//       -o-transition-duration: 0.7s
-//       transition-duration: 0.7s
-//     -webkit-transition-property: height, width
-//     -moz-transition-property: height, width
-//     -o-transition-property: height, width
-//     transition-property: height, width
-//     &.masonry-brick
-//       -webkit-transition-property: left, right, top
-//       -moz-transition-property: left, right, top
-//       -o-transition-property: left, right, top
-//       transition-property: left, right, top
-//   &.infinite-scroll.masonry
-//     -webkit-transition-property: none
-//     -moz-transition-property: none
-//     -o-transition-property: none
-//     transition-property: none
-//
-// /* disable transitions on container
-//
-// /**** Primer comparison ***
-//
-// #comparison
-//   overflow: auto
-//   .example
-//     width: 420px
-//     float: left
-//     margin-right: 20px
-//   .box h5
-//     float: left
-//     margin-bottom: 0
-//     font-size: 30px
-//     margin-right: 4px
-//     line-height: 28px
-//     font-weight: bold
-//     color: #FFF
-//
-// /* Homepage
-//
-// .homepage
-//   .item
-//     width: 200px
-//     float: left
-//     padding: 10px
-//     margin: 10px
-//     background: #D8D5D2
-//     font-weight: 300
-//     -webkit-border-radius: 5px
-//     -moz-border-radius: 5px
-//     border-radius: 5px
-//   .big-text
-//     font-size: 24px
-//     line-height: 1.2em
-//   .link
-//     font-size: 24px
-//     line-height: 1.2em
-//     padding: 0
-//     a
-//       display: block
-//       padding: 10px
-//       width: 200px
-//       background: #D26
-//       color: white
-//       -webkit-border-radius: 5px
-//       -moz-border-radius: 5px
-//       border-radius: 5px
-//       &:hover
-//         background: #A2C
-//   .col2
-//     width: 440px
-//   .example
-//     padding: 0
-//     width: 220px
-//     background: transparent
-//     a
-//       display: block
-//     img
-//       display: block
-//       width: 100%
-//     a:hover
-//       background: #D26
-//       color: white
-//   .loading
-//     background: black
-//     color: #D8D5D2
-//     img
-//       float: left
-//       padding-right: 5px
-//       width: 54px
-//   .mini
-//     div
-//       float: left
-//       background: white
-//       margin: 3px
-//       color: #D8D5D2
-//       font-weight: bold
-//       font-size: 32px
-//       line-height: 46px
-//       text-align: center
-//       -webkit-border-radius: 3px
-//       -moz-border-radius: 3px
-//       border-radius: 3px
-//     .w1
-//       width: 44px
-//     .h1
-//       height: 44px
-//     .w2
-//       width: 94px
-//     .h2
-//       height: 94px
-//
-// /* mini example
-//
-// /* Tumblelog example
-//
-// #tumblelog
-//   background: #FFF
-//   padding: 1.0em
-//   .story
-//     margin: 10px
-//     border-top: 4px solid #DCB
-//     padding-top: 10px
-//     background: #FFF
-//     float: left
-//   h1, h2, h3
-//     font-weight: bold
-//   .col1
-//     width: 220px
-//   .col2
-//     width: 460px
-//   .col3
-//     width: 700px
-//   .col1 img, .col2 img, .col3 img
-//     max-width: none
-//
+.has-gutters
+  .box
+    margin: 5px 0
+  .col1
+    width: 90px
+  .col2
+    width: 230px
+  .col3
+    width: 370px
+  .col4
+    width: 550px
+
+/**** Transitions ***
+
+.transitions-enabled
+  &.masonry
+    -webkit-transition-duration: 0.7s
+    -moz-transition-duration: 0.7s
+    -o-transition-duration: 0.7s
+    transition-duration: 0.7s
+    .masonry-brick
+      -webkit-transition-duration: 0.7s
+      -moz-transition-duration: 0.7s
+      -o-transition-duration: 0.7s
+      transition-duration: 0.7s
+    -webkit-transition-property: height, width
+    -moz-transition-property: height, width
+    -o-transition-property: height, width
+    transition-property: height, width
+    &.masonry-brick
+      -webkit-transition-property: left, right, top
+      -moz-transition-property: left, right, top
+      -o-transition-property: left, right, top
+      transition-property: left, right, top
+  &.infinite-scroll.masonry
+    -webkit-transition-property: none
+    -moz-transition-property: none
+    -o-transition-property: none
+    transition-property: none
+
+/* disable transitions on container
+
+/**** Primer comparison ***
+
+#comparison
+  overflow: auto
+  .example
+    width: 420px
+    float: left
+    margin-right: 20px
+  .box h5
+    float: left
+    margin-bottom: 0
+    font-size: 30px
+    margin-right: 4px
+    line-height: 28px
+    font-weight: bold
+    color: #FFF
+
+/* Homepage
+
+.homepage
+  .item
+    width: 200px
+    float: left
+    padding: 10px
+    margin: 10px
+    background: #D8D5D2
+    font-weight: 300
+    -webkit-border-radius: 5px
+    -moz-border-radius: 5px
+    border-radius: 5px
+  .big-text
+    font-size: 24px
+    line-height: 1.2em
+  .link
+    font-size: 24px
+    line-height: 1.2em
+    padding: 0
+    a
+      display: block
+      padding: 10px
+      width: 200px
+      background: #D26
+      color: white
+      -webkit-border-radius: 5px
+      -moz-border-radius: 5px
+      border-radius: 5px
+      &:hover
+        background: #A2C
+  .col2
+    width: 440px
+  .example
+    padding: 0
+    width: 220px
+    background: transparent
+    a
+      display: block
+    img
+      display: block
+      width: 100%
+    a:hover
+      background: #D26
+      color: white
+  .loading
+    background: black
+    color: #D8D5D2
+    img
+      float: left
+      padding-right: 5px
+      width: 54px
+  .mini
+    div
+      float: left
+      background: white
+      margin: 3px
+      color: #D8D5D2
+      font-weight: bold
+      font-size: 32px
+      line-height: 46px
+      text-align: center
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      border-radius: 3px
+    .w1
+      width: 44px
+    .h1
+      height: 44px
+    .w2
+      width: 94px
+    .h2
+      height: 94px
+
+/* mini example
+
+/* Tumblelog example
+
+#tumblelog
+  background: #FFF
+  padding: 1.0em
+  .story
+    margin: 10px
+    border-top: 4px solid #DCB
+    padding-top: 10px
+    background: #FFF
+    float: left
+  h1, h2, h3
+    font-weight: bold
+  .col1
+    width: 220px
+  .col2
+    width: 460px
+  .col3
+    width: 700px
+  .col1 img, .col2 img, .col3 img
+    max-width: none
+
 /* Infinite Scroll loader
 
-// #infscr-loading
-//   text-align: center
-//   z-index: 100
-//   position: fixed
-//   left: 45%
-//   bottom: 40px
-//   width: 200px
-//   padding: 10px
-//   background: #000
-//   opacity: 0.8
-//   color: #FFF
-//   -webkit-border-radius: 10px
-//   -moz-border-radius: 10px
-//   border-radius: 10px
+#infscr-loading
+  text-align: center
+  z-index: 100
+  position: fixed
+  left: 45%
+  bottom: 40px
+  width: 200px
+  padding: 10px
+  background: #000
+  opacity: 0.8
+  color: #FFF
+  -webkit-border-radius: 10px
+  -moz-border-radius: 10px
+  border-radius: 10px
 
 /**** Fluid ***
 
@@ -512,65 +515,65 @@ button
   &.col3
     width: 56%
 
-// /**** Pygments ***
-//
-// code
-//   .s1, .s
-//     color: #78BD55
-//   .mi, .cp, .kc
-//     color: #5298D4
-//   .k
-//     color: #E39B79
-//   .kd, .na
-//     color: #A9D866
-//   .p
-//     color: #EDB
-//   .o
-//     color: #F63
-//   .nb
-//     color: #AA97AC
-//   .c, .c1
-//     color: #666
-//     font-style: italic
-//   .nt
-//     color: #A0C8FC
-//   .nf
-//     color: #9EA8B8
-//   .nc
-//     color: #A78352
-//   .m
-//     color: #DE8E50
-//   .nd
-//     color: #9FAD7E
-//
-// /* string
-//
-// /*boolean
-// /* keyword
-//
-// /* markup attribute
-// /* punctuation
-// /* operator
-// /* support
-//
-// /* comment
-//
-// /* Markup open tag
-//
-// /* css id
-// /* CSS class
-// /* CSS value
-// /* CSS pseudo selector
+/**** Pygments ***
 
-// /**** Clearfix ***
-//
-// .clearfix
-//   &:before
-//     content: ""
-//     display: table
-//   &:after
-//     content: ""
-//     display: table
-//     clear: both
-//   zoom: 1
-//
+code
+  .s1, .s
+    color: #78BD55
+  .mi, .cp, .kc
+    color: #5298D4
+  .k
+    color: #E39B79
+  .kd, .na
+    color: #A9D866
+  .p
+    color: #EDB
+  .o
+    color: #F63
+  .nb
+    color: #AA97AC
+  .c, .c1
+    color: #666
+    font-style: italic
+  .nt
+    color: #A0C8FC
+  .nf
+    color: #9EA8B8
+  .nc
+    color: #A78352
+  .m
+    color: #DE8E50
+  .nd
+    color: #9FAD7E
+
+/* string
+
+/*boolean
+/* keyword
+
+/* markup attribute
+/* punctuation
+/* operator
+/* support
+
+/* comment
+
+/* Markup open tag
+
+/* css id
+/* CSS class
+/* CSS value
+/* CSS pseudo selector
+
+/**** Clearfix ***
+
+.clearfix
+  &:before
+    content: ""
+    display: table
+  &:after
+    content: ""
+    display: table
+    clear: both
+  zoom: 1
+
